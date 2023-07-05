@@ -34,13 +34,15 @@
         <p1 class="contact">CONTACTEZ-NOUS<br></p1>
         <p1>Notre agence vous promet une expertise personnalisée et un accompagnement sur-mesure pour la réalisation de votre site internet et/ou de votre application.</p1>
         <!-- Cette div est pour les 2 boutons avec leurs logos -->
-        <div class="esport">
-            <button class="KC">
-                <img src= "assets/kc_logo.png" alt="kc logo">Karmine Corp
-            </button>
-            <button class="M8">
-                <img src= "assets/m8_logo.png" alt="m8 logo">Gentle Mates
-            </button>
+        <div class="esport_teams">
+            <div class="esport_box">
+                <div id="esport_btn"></div>
+                <button type="button" class="toggle" onclick="btn_left_clic()">
+                    <img src="assets/kc_logo.png" alt="kc_logo">Karmine Corp
+                </button>
+                <button type="button" class="toggle" onclick="btn_right_clic()">
+                    <img src="assets/m8_logo.png" alt="m8_logo">Gentle Mates
+                </button>
         </div>
 
         <!-- Ici est le formulaire avec les différentes informations (nom, prénom, etc...) -->
@@ -94,6 +96,7 @@
             </div>
         </form>
     </div>
+    <script src= "switch.js"></script>
 </div>
 </body>
 

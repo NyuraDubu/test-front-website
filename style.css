@@ -82,52 +82,45 @@ header img{
     cursor: pointer;
 }
 
-/* J'ai redimentionné les images des bouttons */
-.KC img{
-    width: 16px;
-    height: 16px;
-    margin-right: 10px;
-}
-
-.M8 img{
-    width: 16px;
-    height: 16px;
-    margin-right: 10px;
-}
-
-.KC:hover{
-    background-color: #842a34;
-    cursor: pointer;
-}
-
-.M8:hover{
-    background-color: #842a34;
-    cursor: pointer;
-}
-
-/* J'ai modifié la couleur des deux boutons Karmine Corp et Gentle Mates*/
-.esport button{
-    background-color: #ff4654;
-    border-radius: 50px;
-    border-color: #ff4654;
-    color: white;
-    font-weight: bold;
-    border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 8px 20px;
-}
-
-.esport{
+/* Ici, j'ai set ma box pour le choix des bouttons */
+.esport_box{
     background-color: #efefef;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-    border-radius: 50px;
-    margin-top: 20px;
-    width: 21em;
+    border-radius: 30px;
+    position: relative;
+    width: 388px;
+    margin: 35px auto;
+}
+
+.toggle{
+    background: transparent;
+    border: 0;
+    font-weight: bold;
+    position: relative;
+    top: -2px;
+    padding: 15px 40px;
+    outline: none;
+    cursor: pointer;
+}
+
+/* J'ai redimentionné les images des bouttons ici*/
+.toggle img{
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    position: relative;
+    top: 3px;
+}
+
+/* J'ai modifié la couleur du bouton quand on clique dessus et add l'effet de slide */
+#esport_btn{
+    transition: 0.2s;
+    background: #ff4654;
+    border-radius: 30px;
+    position: absolute;
+    width: 194px;
+    height: 100%;
+    top: 0;
+    left: 0;
 }
 
 input::-webkit-outer-spin-button,
@@ -186,41 +179,41 @@ label[for="checkbox"]{
     font-size: 80%;
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
+/* @media screen and (min-width: 480px) and (max-width: 768px) {
     header {
       height: 10em;
     }
-  
+
     .content {
       width: 100%;
       top: 0;
     }
-  
+
     .esport {
       flex-wrap: wrap;
       justify-content: center;
     }
-  
+
     .esport button {
       margin-top: 10px;
     }
-}
+} */
 
 /* @media screen and (max-width: 480px) {
     header {
       height: 10em;
     }
-  
+
     .content {
       width: 100%;
       top: 0;
     }
-  
+
     .esport {
       flex-wrap: wrap;
       justify-content: center;
     }
-  
+
     .esport button {
       margin-top: 10px;
     }
