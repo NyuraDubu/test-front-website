@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+
+body{
+    /* background-color: aqua; */
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* J'ai mis une image en background au lieu d'import l'image dans le html */
+header{
+    background: url("assets/banner.jpg");
+    background-size: cover;
+    background-position: 50% 25%;
+    height: 15em;
+}
+
+/* J'ai redimensionné l'image de mon header */
+header img{
+    width: 100%;
+    height: 100%;
+}
+
+/* Ici est la div des informations */
+.info{
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+/* Ici est le texte contenant l'adresse, le numéro de téléphone et l'email de l'entreprise */
+.info p1{
+    margin-bottom: 20px;
+}
+
+/* Ici est la div de mon formulaire */
+.form{
+    background-color: white;
+    padding: 30px;
+    border-radius: 7px;
+    box-shadow: 0px 0px 10px 4px rgba(138, 200, 215, 0.14);
+}
+
+/* Ici est la div de mon formulaire et des informations */
+.content{
+    width: 25em;
+    position: relative;
+    top: -50px;
+}
+
+/* Ici est le texte "Contactez-nous" */
+.contact{
+    /* background-color: lightsalmon; */
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.logo img{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+/* J'ai modifié la couleur du bouton ENVOYER */
+.button button{
+    background-color: #ff4654;
+    border-radius: 50px;
+    border-color: #ff4654;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 5px 20px;
+    margin-top: 20px;
+    margin-left: 115px;
+}
+
+/* J'ai modifié la couleur du bouton ENVOYER quand on hover */
+.button button:hover{
+    background-color: #842a34;
+    cursor: pointer;
+}
+
+/* J'ai redimentionné les images des bouttons */
+.KC img{
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+}
+
+.M8 img{
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+}
+
+.KC:hover{
+    background-color: #842a34;
+    cursor: pointer;
+}
+
+.M8:hover{
+    background-color: #842a34;
+    cursor: pointer;
+}
+
+/* J'ai modifié la couleur des deux boutons Karmine Corp et Gentle Mates*/
+.esport button{
+    background-color: #ff4654;
+    border-radius: 50px;
+    border-color: #ff4654;
+    color: white;
+    font-weight: bold;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+}
+
+.esport{
+    background-color: #efefef;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    margin-top: 20px;
+    width: 21em;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input{
+    background-color: #ffffff00;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+input:focus, input:active, textarea{
+    outline: none;
+}
+
+.container{
+    /* background-color: orange; */
+    display: flex;
+    justify-content: center;
+}
+
+.single_input{
+    /* background-color: antiquewhite; */
+    display: flex;
+    flex-direction: column;
+}
+
+.input_size{
+    display: flex;
+    justify-content: space-between;   
+}
+
+/* Input Nom Prénom / Code Postal Ville */
+.input_size .single_input{
+    width: 100%;
+}
+
+.input_size .single_input:first-child{
+    margin-right: 20px;
+}
+
+.checkbox:focus, .checkbox:active{
+    outline: none;
+    background-color: #ff4654;
+}
+
+input[type="checkbox"] {
+    accent-color: #ff4654;
+}
+
+label[for="checkbox"]{
+    font-size: 80%;
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    header {
+      height: 10em;
+    }
+  
+    .content {
+      width: 100%;
+      top: 0;
+    }
+  
+    .esport {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .esport button {
+      margin-top: 10px;
+    }
+}
+
+/* @media screen and (max-width: 480px) {
+    header {
+      height: 10em;
+    }
+  
+    .content {
+      width: 100%;
+      top: 0;
+    }
+  
+    .esport {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .esport button {
+      margin-top: 10px;
+    }
+} */

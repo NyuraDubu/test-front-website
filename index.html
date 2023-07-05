@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulaire test</title>
+</head>
+
+<body>
+<!-- J'ai mis une balise header vide parce que j'ai set la size de l'header et j'ai mis une image en background directement dans le CSS -->
+<header>
+</header>
+
+<!-- Ici j'ai mis ma div container qui me permet de mettre mes deux div (info et formulaire) côte à côte -->
+<div class="container">
+    <!-- Ici est la div pour les informations -->
+    <div class="info content">
+        <h1>MFM DIGITAL</h1>
+        <p1>Rue de la Grosse-Tour 3 1000 Bruxelles</p1>
+        <p1>+32 2 880 96 92</p1>
+        <p1>info@mfmdigital.com</p1>
+        <!-- Ici je set les logos des différents réseaux sociaux dans la div information -->
+        <div class="logo">
+            <img src ="assets/facebook_logo.png" alt="facebook logo">
+            <img src ="assets/linkedin_logo.png" alt="linkedin logo">
+        </div>
+    </div>
+
+    <!-- Ici est la div pour le formulaire -->
+    <div class="form content">
+        <p1 class="contact">CONTACTEZ-NOUS<br></p1>
+        <p1>Notre agence vous promet une expertise personnalisée et un accompagnement sur-mesure pour la réalisation de votre site internet et/ou de votre application.</p1>
+        <!-- Cette div est pour les 2 boutons avec leurs logos -->
+        <div class="esport">
+            <button class="KC">
+                <img src= "assets/kc_logo.png" alt="kc logo">Karmine Corp
+            </button>
+            <button class="M8">
+                <img src= "assets/m8_logo.png" alt="m8 logo">Gentle Mates
+            </button>
+        </div>
+
+        <!-- Ici est le formulaire avec les différentes informations (nom, prénom, etc...) -->
+        <form action="index.php" method="post">
+
+            <!-- Dans cette div j'ai mis les 2 inputs (nom et prénom) côte à côte -->
+            <div class="input_size">
+                <div class="single_input">
+                    <label for="name">Nom*</label>
+                    <input type="text" id="name" name="user_name">
+                </div>
+                <div class="single_input">
+                    <label for="firstname">Prénom*</label>
+                    <input type="text" id="firstname" name="user_firstname">
+                </div>
+            </div>
+
+            <!-- Ici j'ai mis les autres inputs (téléphone, email et adresse) un en dessous de l'autre -->
+            <div class="single_input">
+                <label for="phone">Numéro de téléphone*</label>
+                <input type="tel" id="phone" name="user_phone">
+            </div>
+            <div class="single_input">
+                <label for="email">Email*</label>
+                <input type="email" id="email" name="user_email">
+            </div>
+            <div class="single_input">
+                <label for="adress">Adresse</label>
+                <input type="adress" name="user_adress">
+            </div>
+
+            <!-- Pareil que pour le nom et le prénom, j'ai mis les inputs (code postal et ville) côte à côte -->
+            <div class="input_size">
+                <div class="single_input">
+                    <label for="postal">Code Postal</label>
+                    <input type="postal" name="user_postal">
+                </div>
+                <div class="single_input">
+                    <label for="city">Ville</label>
+                    <input type="city" name="user_city">
+                </div>
+            </div>
+
+            <!-- Ici j'ai mis le checkbox avec le bouton envoyer -->
+            <checkbox>
+                <input type="checkbox" id="checkbox" name="checkbox">
+                <label for="checkbox">J'accepte que mes données soient recueillies par une famille de crapauds ou de grenouilles aux étangs d'Ixelles.</label>
+            </checkbox>
+            <div class="button">
+                <button type="submit">ENVOYER</button>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+
+</html>
