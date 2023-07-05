@@ -73,7 +73,7 @@ header img{
     border: none;
     padding: 5px 20px;
     margin-top: 20px;
-    margin-left: 115px;
+    margin-left: 148px;
 }
 
 /* J'ai modifié la couleur du bouton ENVOYER quand on hover */
@@ -161,7 +161,7 @@ input:focus, input:active, textarea{
 
 .input_size{
     display: flex;
-    justify-content: space-between;   
+    justify-content: space-between;
 }
 
 /* Input Nom Prénom / Code Postal Ville */
