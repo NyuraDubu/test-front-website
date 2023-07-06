@@ -73,7 +73,7 @@ header img{
     border: none;
     padding: 5px 20px;
     margin-top: 20px;
-    margin-left: 148px;
+    margin-left: 35%;
 }
 
 /* J'ai modifié la couleur du bouton ENVOYER quand on hover */
@@ -85,10 +85,12 @@ header img{
 /* Ici, j'ai set ma box pour le choix des bouttons */
 .esport_box{
     background-color: #efefef;
-    border-radius: 30px;
+    border-radius: 20px;
     position: relative;
-    width: 388px;
-    margin: 35px auto;
+    width: 78%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
 }
 
 .toggle{
@@ -97,7 +99,8 @@ header img{
     font-weight: bold;
     position: relative;
     top: -2px;
-    padding: 15px 40px;
+    padding: 10px 10px;
+    margin-left: 7px;
     outline: none;
     cursor: pointer;
 }
@@ -114,10 +117,10 @@ header img{
 /* J'ai modifié la couleur du bouton quand on clique dessus et add l'effet de slide */
 #esport_btn{
     transition: 0.2s;
-    background: #ff4654;
-    border-radius: 30px;
+    background: #0ab5ed;
+    border-radius: 20px;
     position: absolute;
-    width: 194px;
+    width: 50%;
     height: 100%;
     top: 0;
     left: 0;
@@ -134,6 +137,7 @@ input{
     border-top: none;
     border-left: none;
     border-right: none;
+    margin-bottom: 10px;
 }
 
 input:focus, input:active, textarea{
@@ -179,42 +183,105 @@ label[for="checkbox"]{
     font-size: 80%;
 }
 
-/* @media screen and (min-width: 480px) and (max-width: 768px) {
-    header {
-      height: 10em;
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    .container{
+        flex-wrap: wrap-reverse;
     }
 
-    .content {
-      width: 100%;
-      top: 0;
+    .form{
+        width: 65%;
     }
 
-    .esport {
-      flex-wrap: wrap;
-      justify-content: center;
+    .info {
+        width: 50%;
+        text-align: left;
+        padding-right: 20px;
+        margin-top: 5%;
     }
 
-    .esport button {
-      margin-top: 10px;
-    }
-} */
-
-/* @media screen and (max-width: 480px) {
-    header {
-      height: 10em;
+    .info p1 {
+        font-size: 0.8em;
     }
 
-    .content {
-      width: 100%;
-      top: 0;
+    .button button {
+        width: 20%;
+        height: 40px;
+        margin-left: 40%;
     }
 
-    .esport {
-      flex-wrap: wrap;
-      justify-content: center;
+    .esport_box {
+        width: 100%;
     }
 
-    .esport button {
-      margin-top: 10px;
+    .toggle {
+        margin: auto;
     }
-} */
+
+    #esport_btn{
+        width: 50%;
+    }
+    
+    .input_size {
+        flex-direction: column;
+    }
+
+    .input_size .single_input {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .input_size .single_input:first-child {
+        margin-bottom: 10px;
+    }
+}
+  
+@media screen and (max-width: 480px){
+    .container{
+        flex-wrap: wrap-reverse;
+    }
+
+    .form{
+        width: 65%;
+    }
+
+    .info {
+        width: 50%;
+        text-align: left;
+        padding-right: 20px;
+        margin-top: 10%;
+    }
+
+    .info p1 {
+        font-size: 0.8em;
+    }
+
+    .button button {
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    .esport_box {
+        width: 100%;
+    }
+
+    .toggle {
+        margin: auto;
+    }
+
+    #esport_btn{
+        width: 50%;
+    }
+    
+    .input_size {
+        flex-direction: column;
+    }
+
+    .input_size .single_input {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .input_size .single_input:first-child {
+        margin-bottom: 10px;
+    }
+}
