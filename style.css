@@ -1,14 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-body{
-    /* background-color: aqua; */
+body {
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
 
 /* J'ai mis une image en background au lieu d'import l'image dans le html */
-header{
+header {
     background: url("assets/banner.jpg");
     background-size: cover;
     background-position: 50% 25%;
@@ -16,27 +15,42 @@ header{
 }
 
 /* J'ai redimensionné l'image de mon header */
-header img{
+header img {
     width: 100%;
     height: 100%;
 }
 
+/* Ici je modifie mon container pour qu'il soit en flexbox et qu'il soit centré */
+.container {
+    display: flex;
+    justify-content: center;
+}
+
 /* Ici est la div des informations */
-.info{
-    /* background-color: yellow; */
+.info {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     justify-content: center;
 }
 
 /* Ici est le texte contenant l'adresse, le numéro de téléphone et l'email de l'entreprise */
-.info p1{
+.info p1 {
     margin-bottom: 20px;
 }
 
+/* Ici sont les logos des réseaux sociaux */
+.logo img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+}
+
 /* Ici est la div de mon formulaire */
-.form{
+.form {
     background-color: white;
     padding: 30px;
     border-radius: 7px;
@@ -44,47 +58,26 @@ header img{
 }
 
 /* Ici est la div de mon formulaire et des informations */
-.content{
+.content {
     width: 25em;
     position: relative;
     top: -50px;
 }
 
 /* Ici est le texte "Contactez-nous" */
-.contact{
-    /* background-color: lightsalmon; */
+.contact {
     font-size: 1.5em;
     font-weight: bold;
+    margin-top: -5px;
+    margin-bottom: 10px;
 }
 
-.logo img{
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
-}
-
-/* J'ai modifié la couleur du bouton ENVOYER */
-.button button{
-    background-color: #ff4654;
-    border-radius: 50px;
-    border-color: #ff4654;
-    color: white;
-    font-weight: bold;
-    border: none;
-    padding: 5px 20px;
-    margin-top: 20px;
-    margin-left: 35%;
-    width: 30%;
-}
-
-/* J'ai modifié la couleur du bouton ENVOYER quand on hover */
-.button button:hover{
-    background-color: #842a34;
-    cursor: pointer;
+.form p1 {
+    line-height: 150%;
 }
 
 /* Ici, j'ai set ma box pour le choix des bouttons */
-.esport_box{
+.esport_box {
     background-color: #efefef;
     border-radius: 20px;
     position: relative;
@@ -94,7 +87,8 @@ header img{
     display: flex;
 }
 
-.toggle{
+/* Ici, j'ai set ma box pour le choix des bouttons */
+.toggle {
     background: transparent;
     border: 0;
     font-weight: bold;
@@ -108,7 +102,7 @@ header img{
 }
 
 /* J'ai redimentionné les images des bouttons ici*/
-.toggle img{
+.toggle img {
     width: 16px;
     height: 16px;
     margin-right: 10px;
@@ -117,7 +111,7 @@ header img{
 }
 
 /* J'ai modifié la couleur du bouton quand on clique dessus et add l'effet de slide */
-#esport_btn{
+#esport_btn {
     transition: 0.2s;
     background: #0ab5ed;
     border-radius: 20px;
@@ -128,13 +122,8 @@ header img{
     left: 0;
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-
-input{
+/* Ici je modifie la forme de la bordure des inputs */
+input {
     background-color: #ffffff00;
     border-top: none;
     border-left: none;
@@ -142,55 +131,83 @@ input{
     margin-bottom: 10px;
 }
 
-input:focus, input:active, textarea{
+/* Ici je modifie la couleur et la taille de la bordure des inputs */
+.single_input input {
+    border-bottom: 1px solid #d0d0d0;
+}
+
+/* Ici je désactive l'outline des inputs */
+input:focus, input:active, textarea {
     outline: none;
 }
 
-.container{
-    /* background-color: orange; */
-    display: flex;
-    justify-content: center;
-}
-
-.single_input{
-    /* background-color: antiquewhite; */
+/* Ici j'ai set la flexbox pour les inputs */
+.single_input {
     display: flex;
     flex-direction: column;
 }
 
-.input_size{
+/* Ici j'ai set les inputs Nom / Prénom et Code Postal / Ville sur la même ligne */
+.input_size {
     display: flex;
     justify-content: space-between;
 }
 
-/* Input Nom Prénom / Code Postal Ville */
-.input_size .single_input{
+/* J'ai modifié la taille des inputs Nom / Prénom et Code Postal / Ville */
+.input_size .single_input {
     width: 100%;
 }
 
-.input_size .single_input:first-child{
+/* J'ai fais en sorte qu'il y ait un espace entre les inputs Nom / Prénom et Code Postal / Ville */
+.input_size .single_input:first-child {
     margin-right: 20px;
 }
 
-.checkbox:focus, .checkbox:active{
-    outline: none;
-    background-color: #ff4654;
-}
-
+/* Ici j'ai modifié la couleur de la checkbox */
 input[type="checkbox"] {
     accent-color: #ff4654;
 }
 
-label[for="checkbox"]{
+/* Ici j'ai modifié la taille du label de la checkbox */
+label[for="checkbox"] {
     font-size: 80%;
+    margin-left: 5px;
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
-    .container{
+/* J'ai modifié la couleur du bouton ENVOYER */
+.button button {
+    background-color: #ff4654;
+    border-radius: 50px;
+    border-color: #ff4654;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 5px 20px;
+    margin-top: 20px;
+    margin-left: 35%;
+    width: 30%;
+    height: 40px;
+}
+
+/* J'ai modifié la couleur du bouton ENVOYER quand on hover */
+.button button:hover {
+    background-color: #842a34;
+    cursor: pointer;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Ici est le CSS pour le responsive sur écrans de 480px à 768px de largeur */
+@media screen and (min-width: 480px) and (max-width: 768px){
+    .container {
         flex-wrap: wrap-reverse;
     }
 
-    .form{
+    .form {
         width: 65%;
     }
 
@@ -222,7 +239,7 @@ label[for="checkbox"]{
         margin: auto;
     }
 
-    #esport_btn{
+    #esport_btn {
         width: 50%;
     }
 
@@ -240,12 +257,13 @@ label[for="checkbox"]{
     }
 }
 
+/* Ici est le CSS pour le responsive sur écrans à 480px de largeur maximum */
 @media screen and (max-width: 480px){
-    .container{
+    .container {
         flex-wrap: wrap-reverse;
     }
 
-    .form{
+    .form {
         width: 75%;
     }
 
@@ -253,11 +271,11 @@ label[for="checkbox"]{
         width: 50%;
         text-align: left;
         padding-right: 20px;
-        margin-top: 10%;
+        margin-top: 5%;
     }
 
     .info p1 {
-        font-size: 0.8em;
+        font-size: 0.7em;
     }
 
     .button button {
@@ -273,7 +291,7 @@ label[for="checkbox"]{
         margin: auto;
     }
 
-    #esport_btn{
+    #esport_btn {
         width: 50%;
     }
 
