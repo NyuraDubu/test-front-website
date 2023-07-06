@@ -74,6 +74,7 @@ header img{
     padding: 5px 20px;
     margin-top: 20px;
     margin-left: 35%;
+    width: 30%;
 }
 
 /* J'ai modifié la couleur du bouton ENVOYER quand on hover */
@@ -205,13 +206,16 @@ label[for="checkbox"]{
     }
 
     .button button {
-        width: 20%;
+        width: 50%;
         height: 40px;
-        margin-left: 40%;
+        margin-left: 25%;
     }
 
     .esport_box {
-        width: 100%;
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     .toggle {
@@ -221,7 +225,7 @@ label[for="checkbox"]{
     #esport_btn{
         width: 50%;
     }
-    
+
     .input_size {
         flex-direction: column;
     }
@@ -235,14 +239,14 @@ label[for="checkbox"]{
         margin-bottom: 10px;
     }
 }
-  
+
 @media screen and (max-width: 480px){
     .container{
         flex-wrap: wrap-reverse;
     }
 
     .form{
-        width: 65%;
+        width: 75%;
     }
 
     .info {
@@ -272,7 +276,7 @@ label[for="checkbox"]{
     #esport_btn{
         width: 50%;
     }
-    
+
     .input_size {
         flex-direction: column;
     }
