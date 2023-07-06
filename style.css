@@ -165,7 +165,7 @@ input:focus, input:active, textarea {
 
 /* Ici j'ai modifié la couleur de la checkbox */
 input[type="checkbox"] {
-    accent-color: #ff4654;
+    accent-color: #9dd129;
 }
 
 /* Ici j'ai modifié la taille du label de la checkbox */
@@ -176,9 +176,8 @@ label[for="checkbox"] {
 
 /* J'ai modifié la couleur du bouton ENVOYER */
 .button button {
-    background-color: #ff4654;
+    background-color: #9dd129;
     border-radius: 50px;
-    border-color: #ff4654;
     color: white;
     font-weight: bold;
     border: none;
@@ -191,7 +190,8 @@ label[for="checkbox"] {
 
 /* J'ai modifié la couleur du bouton ENVOYER quand on hover */
 .button button:hover {
-    background-color: #842a34;
+    transform: scale(1.05);
+    background-color: #789c29;
     cursor: pointer;
 }
 
