@@ -45,6 +45,7 @@ header img {
     cursor: pointer;
 }
 
+/* J'ai mis un effet de scale sur les logos des réseaux sociaux quand on hover avec la souris */
 .logo img:hover {
     transform: scale(1.1);
 }
@@ -87,7 +88,7 @@ header img {
     display: flex;
 }
 
-/* Ici, j'ai set ma box pour le choix des bouttons */
+/* Ici, j'ai modifié mes boutons pour qu'ils correspondent à la taille de ma box */
 .toggle {
     background: transparent;
     border: 0;
@@ -110,7 +111,7 @@ header img {
     top: 3px;
 }
 
-/* J'ai modifié la couleur du bouton quand on clique dessus et add l'effet de slide */
+/* J'ai modifié la couleur du bouton quand on clique dessus et j'ai ajouté l'effet de slide en utilisant JS */
 #esport_btn {
     transition: 0.2s;
     background: #0ab5ed;
@@ -136,7 +137,7 @@ input {
     border-bottom: 1px solid #d0d0d0;
 }
 
-/* Ici je désactive l'outline des inputs */
+/* Ici je désactive l'outline des inputs quand on clique dessus */
 input:focus, input:active, textarea {
     outline: none;
 }
@@ -163,9 +164,30 @@ input:focus, input:active, textarea {
     margin-right: 20px;
 }
 
-/* Ici j'ai modifié la couleur de la checkbox */
+/* Ici j'ai modifié la couleur et la largeur de la checkbox */
 input[type="checkbox"] {
-    accent-color: #9dd129;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    border: 2px solid #9dd129;
+    border-radius: 4px;
+    margin-bottom: -2px;
+    width: 14px;
+    height: 14px;
+}
+
+/* Ici j'ai modifié la couleur et la taille du checkmark de la checkbox */
+input[type="checkbox"]:checked::before {
+    background-color: #9dd129;
+    border-radius: 2px;
+    border: 2px solid #9dd129;
+    content: "";
+    display: block;
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 4px;
+    height: 4px;
 }
 
 /* Ici j'ai modifié la taille du label de la checkbox */
@@ -174,7 +196,7 @@ label[for="checkbox"] {
     margin-left: 5px;
 }
 
-/* J'ai modifié la couleur du bouton ENVOYER */
+/* J'ai modifié la couleur du bouton ENVOYER et sa taille */
 .button button {
     background-color: #9dd129;
     border-radius: 50px;
@@ -188,7 +210,7 @@ label[for="checkbox"] {
     height: 40px;
 }
 
-/* J'ai modifié la couleur du bouton ENVOYER quand on hover */
+/* J'ai modifié la couleur du bouton ENVOYER quand on hover avec la souris */
 .button button:hover {
     transform: scale(1.05);
     background-color: #789c29;
